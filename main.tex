@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[acronym]{glossaries}
+
+\makeglossaries
+\newglossaryentry{BTC}
+{
+    name=bitcoin,
+    description={Bitcoin is a decentralized cryptocurrency that uses a peer-to-peer network to verify and record transactions in a public distributed ledger called a blockchain.},
+    plural=bitcoins,
+}
+
+\newglossaryentry{BC}
+{
+    name=blockchain,
+    description={A blockchain is a type of distributed ledger that securely links together growing lists of records called blocks using crypto hashes.},
+}
+
+\newacronym{e2e}{E2E}{End To End}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{gui}{GUI}{Graphical User Interface}
+
+\begin{document}
+
+\section{Introduction}
+
+\subsection{Blockchain Technology} \Glspl{BTC} is a digital currency that operates on a decentralized system known as \gls{BC} technology.
+
+\subsection{Terminologies} \begin{description} \item[E2E] E2E stands for \gls{e2e} \item[API] API stands for \gls{api} \item[GUI] GUI stands for \gls{gui} \end{description}
+
+\printglossaries
+
+\end{document}
